@@ -377,10 +377,43 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="footer-text-social">Subscribe</p>
+          <input
+            class="input-footer"
+            type="email"
+            name="mail"
+            placeholder="E-mail"
+          />
+          <button class="btn-footer">Subscribe</button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h2>Leave your contacts and we will call you back</h2>
+        <form action="">
+          <div class="form-filed">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-filed">
+            <label for="tel">Phone</label>
+            <input type="tel" />
+          </div>
+          <div class="form-filed">
+            <label for="mail">Email</label>
+            <input type="email" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Text input"
+          ></textarea>
+          <button>Send</button>
+        </form>
         <button class="btn-close" data-modal-close>
           <svg class="icon-modal">
             <use href="./images/close.svg#icon-close"></use>
@@ -388,7 +421,6 @@
         </button>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
