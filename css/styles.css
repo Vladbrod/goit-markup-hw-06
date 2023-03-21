@@ -625,12 +625,12 @@ body {
     pointer-events: none;
 }
 
-.btn-close:focus,
+
 .btn-close:hover {
     background-color: #404BBF;
 }
 
-.icon-modal:focus,
+
 .icon-modal:hover {
     fill: #fff;
 }
@@ -685,6 +685,8 @@ body {
 }
 
 .input-footer {
+    color: #FFFFFF;
+    padding-left: 16px;
     background: #2E2F42;
     width: 246px;
     height: 40px;
@@ -715,13 +717,7 @@ body {
     resize: none;
 }
 
-.checkbox-label {
-    font-family: var(--primary--font);
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-}
+
 
 .title-modal {
     font-family: var(--primary--font);
@@ -745,7 +741,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     padding: 16px 32px;
-    margin-top: 48px;
+    margin-top: 24px;
     display: block;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: auto;
@@ -773,6 +769,10 @@ body {
 
 }
 
+.form-input:focus {
+    border: 1px solid #4D5AE5;
+}
+
 .form-label {
     font-family: var(--primary--font);
     font-size: 12px;
@@ -781,17 +781,61 @@ body {
     color: #8E8F99;
 }
 
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-family: var(--primary--font);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
 .checkbox {
+    display: block;
     appearance: none;
 }
 
 .icon-span {
+    margin-right: 9px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: tomato;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+
 }
 
 .checkbox:checked+.icon-span {
-    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #404BBF;
+    border-color: #404BBF;
+    background-image: url(../images/Vector.svg);
+}
+
+.link-span {
+    color: #4D5AE5;
+    font-family: var(--primary--font);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    margin-left: 4px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.icon-modal-teg {
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input:focus+.icon-modal {
+    fill: #4D5AE5;
 }
