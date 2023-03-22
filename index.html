@@ -379,22 +379,25 @@
         </div>
         <div class="subscribe">
           <p class="footer-text-social">Subscribe</p>
-          <input
-            class="input-footer"
-            type="email"
-            name="mail"
-            placeholder="E-mail"
-          />
-          <button class="btn-footer">Subscribe</button>
+          <form class="subscribe-footer">
+            <input
+              aria-label="email"
+              class="input-footer"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button class="btn-footer">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="title-modal">
+        <b class="title-modal">
           Leave your contacts and we will call you back
-        </h2>
-        <form class="form" action="">
+        </b>
+        <form class="form">
           <div class="form-filed">
             <label class="form-label" for="name">Name</label>
             <div class="form-group">
@@ -407,7 +410,7 @@
           <div class="form-filed">
             <label class="form-label" for="tel">Phone</label>
             <div class="form-group">
-              <input class="form-input" type="text" name="name" id="name" />
+              <input class="form-input" type="tel" name="tel" id="tel" />
               <svg class="icon-modal-teg">
                 <use href="./images/symbol-teg.svg#icon-phone-black"></use>
               </svg>
@@ -416,19 +419,17 @@
           <div class="form-filed">
             <label class="form-label" for="mail">Email</label>
             <div class="form-group">
-              <input class="form-input" type="text" name="name" id="name" />
+              <input class="form-input" type="email" name="mail" id="mail" />
               <svg class="icon-modal-teg">
                 <use href="./images/symbol-teg.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
-          <label class="form-label" for="">Comment</label>
+          <label class="form-label" for="textarea">Comment</label>
           <textarea
             class="textare-modal"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
+            name="textarea"
+            id="textarea"
             placeholder="Text input"
           ></textarea>
 
