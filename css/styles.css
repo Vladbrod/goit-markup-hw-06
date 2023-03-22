@@ -864,25 +864,3 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-
-
-
-.close {
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    border: 0;
-    color: red;
-}
-
-
-.iconnnnnn {
-    fill: currentColor;
-    width: 8px;
-    height: 8px;
-}
-
-.close:hover {
-    color: #fff;
-    background-color: #4D5AE5;
-}
