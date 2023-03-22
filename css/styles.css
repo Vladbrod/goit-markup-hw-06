@@ -673,7 +673,7 @@ body {
     margin-left: 16px;
     width: 24px;
     height: 20px;
-    background-image: url(/images/Frame.png);
+    background-image: url(../images/Frame.png);
 
 }
 
@@ -714,9 +714,7 @@ body {
     margin-top: 16px;
 }
 
-.form-filed {
-    margin-top: 8px;
-}
+.form-filed {}
 
 .textare-modal {
     width: 360px;
@@ -800,6 +798,7 @@ body {
 }
 
 .form-label {
+    margin-top: 8px;
     display: block;
     font-family: var(--primary--font);
     font-size: 12px;
@@ -860,7 +859,7 @@ body {
     width: 18px;
     height: 24px;
     position: absolute;
-    left: 19px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
 }
